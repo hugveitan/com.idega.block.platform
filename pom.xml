@@ -40,6 +40,7 @@
 	<module>com.idega.user</module>
 	<module>com.idega.developer</module>
 	<module>com.idega.jackrabbit</module>
+	<module>com.idega.rewrite</module>
   </modules>
   
   <repositories>
@@ -325,6 +326,7 @@
         <targetPath>META-INF</targetPath>
         <includes>
           <include>faces-config.xml</include>
+          <include>pretty-config.xml</include>
         </includes>
       </resource>
       <resource>
@@ -640,6 +642,12 @@
 	    <dependency>
 	      <groupId>com.idega.block.platform</groupId>
   		  <artifactId>com.idega.jackrabbit</artifactId>
+  	 	  <version>5.0.0-SNAPSHOT</version>
+	      <type>jar</type>
+	    </dependency>
+	    <dependency>
+	      <groupId>com.idega.block.platform</groupId>
+  		  <artifactId>com.idega.rewrite</artifactId>
   	 	  <version>5.0.0-SNAPSHOT</version>
 	      <type>jar</type>
 	    </dependency>
@@ -1053,6 +1061,16 @@
 	    	<version>${htmlcleaner-version}</version>
 	    	<type>jar</type>
    		</dependency>
+	    <dependency>
+	    	<groupId>com.ocpsoft</groupId>
+	    	<artifactId>prettyfaces-jsf2</artifactId>
+	    	<version>${com.ocpsoft-prettyfaces-version}</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>com.ocpsoft</groupId>
+	    	<artifactId>ocpsoft-pretty-time</artifactId>
+	    	<version>${com.ocpsoft-pretty-time-version}</version>
+	    </dependency>
     </dependencies>
   </dependencyManagement>
   
@@ -1081,8 +1099,10 @@
     <commons-pool-commons-pool-version>1.1</commons-pool-commons-pool-version>
     <commons-transaction-commons-transaction-version>1.2.idega-patched</commons-transaction-commons-transaction-version>
     <commons-validator-commons-validator-version>1.3.1</commons-validator-commons-validator-version>
-    <commons-io-commons-io-version>1.3.1</commons-io-commons-io-version>
+    <commons-io-commons-io-version>1.4</commons-io-commons-io-version>
     <com.google.common-google-collect-version>20080321</com.google.common-google-collect-version>
+    <com.ocpsoft-pretty-time-version>1.0.7</com.ocpsoft-pretty-time-version>
+    <com.ocpsoft-prettyfaces-version>3.3.2</com.ocpsoft-prettyfaces-version>
     <com.thoughtworks.xstream-xstream-version>1.3</com.thoughtworks.xstream-xstream-version>
     <dom4j-dom4j-version>1.6.1</dom4j-dom4j-version>
     <dwr-dwr-version>3.0rc1-iwbuild1</dwr-dwr-version>
@@ -1111,7 +1131,7 @@
     <org.hibernate-hibernate-commons-annotations-version>3.3.0.ga</org.hibernate-hibernate-commons-annotations-version>
     <org.hibernate-hibernate-entitymanager-version>3.4.0.GA</org.hibernate-hibernate-entitymanager-version>
     <org.hibernate-hibernate-core-version>3.3.1.GA</org.hibernate-hibernate-core-version>
-    <org.slf4j-slf4j-api-version>1.6.1</org.slf4j-slf4j-api-version>
+    <org.slf4j-slf4j-api-version>1.5.11</org.slf4j-slf4j-api-version>
     <org.springframework-spring-version>2.5.6</org.springframework-spring-version>
     <org.springframework-spring-test-version>2.5.6</org.springframework-spring-test-version>
     <stax-stax-api-version>1.0.1</stax-stax-api-version>

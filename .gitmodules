@@ -82,3 +82,6 @@
 [submodule "com.idega.jackrabbit"]
 	path = com.idega.jackrabbit
 	url = git@github.com:idega/com.idega.jackrabbit.git
+[submodule "com.idega.rewrite"]
+	path = com.idega.rewrite
+	url = git@github.com:hugveitan/com.idega.rewrite.git
