@@ -281,6 +281,7 @@
       <resource>
         <directory>${basedir}/properties</directory>
         <targetPath>properties</targetPath>
+        <filtering>true</filtering>
       </resource>
       <resource>
         <directory>${basedir}/WEB-INF</directory>
